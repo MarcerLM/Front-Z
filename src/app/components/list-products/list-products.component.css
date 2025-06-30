@@ -1,0 +1,79 @@
+.title {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Título llamativo */
+.title h4 {
+  color: #ff5733;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* Botón estilizado */
+.title button {
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.title button:hover {
+  background-color: #218838;
+}
+
+/* Tabla con esquinas suaves y sombra */
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Encabezado atractivo */
+.table-dark thead {
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+}
+
+.table-dark thead th {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Celdas del cuerpo */
+.table-light td {
+  color: #333333;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Texto vacío */
+.text-center {
+  color: red;
+  font-weight: bold;
+}
+
+/* Estilo de botones en tabla */
+.table td .btn {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* Espaciado entre botones en pantallas medianas o más grandes */
+@media (min-width: 768px) {
+  .table td .btn {
+    width: auto;
+  }
+
+  .d-flex.flex-column.flex-md-row.gap-1 > * {
+    margin-right: 4px;
+  }
+}

@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-custom shadow-sm sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">📦 Inventario</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleNavbar()"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="navbarNav"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div [ngClass]="{ 'collapse': isCollapsed, 'navbar-collapse': true, 'show': !isCollapsed }" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link px-3" [routerLink]="['/']" (click)="closeNavbar()">Proveedores</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link px-3" [routerLink]="['/productos']" (click)="closeNavbar()">Productos</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link px-3" [routerLink]="['/movimientos']" (click)="closeNavbar()">Movimientos</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link px-3" [routerLink]="['/ordenes']" (click)="closeNavbar()">Compras</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

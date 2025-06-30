@@ -1,0 +1,73 @@
+.title {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Título llamativo */
+.title h4 {
+  color: #ff5733;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* Botón "Agregar Proveedores" estilizado */
+.title button {
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.title button:hover {
+  background-color: #218838;
+}
+
+/* Tabla con estilo profesional */
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Encabezado con gradiente y texto claro */
+.table-dark thead {
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+}
+
+.table-dark thead th {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Celdas del cuerpo con fondo claro y texto oscuro */
+.table-light td {
+  color: #333333;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Fila vacía con mensaje */
+.text-center {
+  color: red;
+  font-weight: bold;
+}
+
+/* Botones dentro de la tabla */
+.table td .btn {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  width: auto;
+}
+
+/* Espaciado entre botones */
+.table td .btn + .btn {
+  margin-left: 6px;
+}
